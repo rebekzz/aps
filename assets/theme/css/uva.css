@@ -1,0 +1,98 @@
+body {
+    margin: 30px;
+    height: 90%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#ADAD85;
+}
+
+#btn{
+        margin: 10px;
+        display: flex;
+        height: 33px;
+}
+
+header {
+    background-color:transparent;
+    position:fixed;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: 0;
+    color: black;
+    align-items: center;
+    display: flex;
+   }
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.men{
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+}
+.men a{
+    text-decoration: none;
+    color: #fff;
+    margin: 80px;
+}
+.men a:hover {
+    border-bottom: 2px solid #ffffff;
+    transition: 0.3s;
+    text-decoration: none;
+ }
+
+/* Estilo para o submenu */
+.submenu{
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute;
+    top: 100%; /* Alinha o submenu abaixo do item de menu */
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/* Estilo para o submenu quando o mouse está sobre o item de menu */
+.menu-item:hover .submenu {
+    display: block; /* Mostra o submenu quando o mouse está sobre o item de menu */
+}
+
+/* Estilo para os links do submenu */
+.submenu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+/* Estilo para os links do submenu quando o mouse está sobre eles */
+.submenu a:hover {
+    background-color: #555;
+}
+
+
+.paragrafos{
+    display: flex;
+    justify-content: center;
+    flex-flow: row ;
+    width: 60%;
+    gap: 100px; 
+}
+
+p{
+    max-width: 40%;
+}
+.imagem-paragrafos{
+    width: 40%;
+    height: auto;
+}
